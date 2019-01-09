@@ -1,0 +1,129 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+.router-view{
+    padding-top: 80px;
+    margin: 0 auto;
+
+}
+// @media (min-width:950px){
+//     .router-view{
+//     margin-left: 205px;
+//     }
+// }
+
+
+body{
+    background-image: url("../img/garage-BG.jpg");
+    background-repeat: round;
+    background-attachment: fixed;
+    width: 100%;
+    margin:0;
+    color: $dark;
+    // background-size: cover;
+}
+
+*{
+    box-sizing: border-box;
+   
+}
+a{
+    text-decoration: none;
+}
+
+.loading {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+  }
+
+ul {
+    padding: 0 ;
+    margin: 0;
+    list-style-type: none;
+  }
+  h3{
+      margin: 0;
+      margin-bottom: 8px;
+  }
+
+//   .loading{
+//     margin-left: 20px;
+//     color: rgba(121, 121, 121, 0.336);
+//   }
+
+
+
+.flex{
+    display: flex
+}
+
+.column{
+    flex-direction: column
+}
+.row{
+    flex-direction: row
+}
+.row-reverse{
+    flex-direction: row-reverse
+}
+.between{
+    justify-content: space-between
+}
+.around{
+    justify-content: space-around
+}
+.baseline{
+    align-items: baseline;
+}
+.center{
+    align-items: center;
+}
+
+.wrap{
+    flex-wrap: wrap
+}
+.right{
+    text-align: right;
+
+}
+.floated{
+    float: unset;
+}
+
+
+
+// ************layout*****************
+
+.logoutBtn{
+      color:$mid;   
+
+    &:hover{
+      cursor: pointer;
+      color: $dark;
+    }
+}
+.fa-star{
+    color: rgb(155, 155, 155);
+    padding-right: 2px;
+    font-size: .8rem
+}
+.checked {
+    color: rgb(241, 188, 41);
+    } 
+
+  p{
+      margin-bottom: 5px;
+  }
+  h4{
+      margin: 5px 0;
+  }
+
+  .lobster{
+      font-family: $lobster;
+  }
+
+

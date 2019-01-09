@@ -1,0 +1,154 @@
+.user-page-container{
+  max-width: 760px;
+    margin: 0 auto;
+    
+}
+
+
+.user-page-content{
+  padding: 20px;
+  // max-width: 800px;
+  // margin: 0 auto;
+  .user-profile-preview {
+    position: relative;
+    background-color: $semi;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    background-color: rgba(255, 255, 255, 0); 
+    background-image: linear-gradient(to right, rgb(236, 236, 236) , rgba(255, 255, 255, 0)); 
+    margin-bottom:15px;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+  
+    .user-profile-thumbnail {
+      position: relative;
+      margin-right: 12px;
+      height: 100px;
+      width: 100px;
+      border-radius: 500px;
+    
+    }
+
+    .edit-user {
+
+      padding: 3px 0;
+      color: $mid;
+      &:hover{
+        cursor: pointer;
+
+
+      }
+      i{
+        padding: 0;
+        font-size: 1.4rem;
+        
+      }
+    }
+
+    .logoutBtn{
+    &:hover{
+      cursor: pointer;
+      color: $dark;
+    }
+    }
+
+    .profile-info{
+      h1 {
+        text-align: left;
+        margin: 0;
+      }
+    }
+    p {
+      text-align: left;
+      margin: 0;
+    }
+  }
+  
+
+
+  }
+  .ui.card, .ui.cards>.card{
+    height: fit-content;
+    .ui.buttons .button:last-child{
+      // .fa-check , .fa-times{
+
+      //   width: 70px;
+      // }
+    }
+  }
+
+.tab-container{
+  margin: 20px;
+  // .tab-item{
+  //   border: 3px solid greenyellow;
+  // }
+
+  .ui.tabular.menu .active.item {
+    background: white;
+    // height: 30px;
+    box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.51);
+    border: unset;
+  } 
+  .ui.tabular.menu .item {
+    box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.51);
+    background: $semi;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    // border: unset;
+    width: 33.33%;
+  }
+  .ui.tabular.menu {
+    border: unset;
+    display: flex;
+  }
+  .ui.menu .item>.label{
+    background: #dd5959;
+  }
+  i{
+    color: black;
+  }
+  .ui.segment {
+    min-height: 168px;
+    background: white;
+
+    
+  }
+  .ui.attached.segment {
+    border: unset;
+  }
+}
+
+
+@media(max-width:950px){
+  .tab-container{
+    margin: 0px;
+  }
+  .user-page-container{
+    margin-left: unset;
+    margin-bottom: 40px;
+}
+}
+
+
+@media(max-width:520px){
+  .ui.menu .item>.label,.ui.label:last-child {
+    width: fit-content;
+  }
+}
+@media(max-width:410px){
+  .ui.tabular.menu .item {
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    text-align: left;
+  }
+  .ui.menu .item>.label {
+    margin-top: 10px;
+  }
+  .ui.menu .item>i.icon {
+    display: block;
+    margin: 0 auto;
+  }
+}
+

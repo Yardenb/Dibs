@@ -1,0 +1,54 @@
+
+
+.dibs-container{
+
+      .ui.right.floated.image, .ui.right.floated.images{
+            margin: 0;
+            margin-right: 8px;
+            margin-bottom: 8px;
+      }
+    ul{
+        padding: 0;
+    }
+    li {
+      display: inline-block;
+      margin: 10px;
+      width: 217px;
+  img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+
+  }
+  .img-item-dibs{
+      height: 80px;
+      width: 80px;
+      object-fit: cover;
+      border-radius: unset;
+  }
+
+  .fa-minus-circle {
+        color: red;
+    cursor: pointer;
+        transition: 0.8s;
+  }
+  .fa-minus-circle:hover {
+        transform: rotate(-90deg);
+  }
+  .fa-check-circle {
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 30px;
+  }
+  .fa-check-circle:hover {
+         background: green;
+  }
+
+
+
+  .ans-icon{
+      padding: 0;
+      }
+
+}    
+}

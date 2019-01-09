@@ -1,0 +1,166 @@
+.item-container{
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+  i{
+    padding: 0;
+  }
+.details-header{
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 20px;
+  height: 7rem;
+  margin-bottom: 10px;
+  background: rgb(241, 241, 241);
+  padding: 10px;
+    .header-content{
+      text-align: left;
+      // padding: 10px;
+      h3{
+        margin: 0;
+      }
+      i{
+        padding: 0;
+      }
+      .edit-btn-container{
+     
+        i{
+          padding: 0;
+          color: $dark;
+          margin-right: 6px;
+          font-size: 1.3rem;
+          &:hover{
+            cursor: pointer;
+            color: $mid;
+          }
+        }
+      }
+
+      #item-created{
+        font-size: 14px;
+        margin-bottom: 3px;
+        font-weight: 100;
+        color: $mid;
+      }
+    }
+    .details-seller-img{
+      height: 40px;
+      width: 40px;
+      border-radius: 50px;
+      margin-right: 5px;
+    }
+  }
+}
+
+
+
+.details-container{
+  width: 100%;
+  background: #e7e7e7;
+  // width: 100%;
+  text-align: left;
+  padding: 15px;
+
+  h3{
+    margin: 0;
+    text-align: left;
+    padding: 0;
+    padding-left:10px; 
+
+  }
+  .item-desc{
+    padding: 0;
+    padding-bottom: 8px;
+    text-align: left;
+  }
+  p{
+    padding-bottom: 8px;
+    margin: 0;
+  }
+  .map{
+    margin-top: 5px;
+    width:100% ;
+    height: 300px;
+  }
+  .action-btn-container{
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: left;
+      .fa-heart{
+        position: initial;
+      }
+      
+    }
+    
+  }
+.dibs-btn{
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  font-family: $lobster;
+  display: block;
+  margin-left: 12px;
+  text-align: center;
+  padding: 5px;
+  background: #7fa00e;
+  color: white;
+  border-radius: 6px;
+  transition: .3s;
+    &:hover{
+      background: #99ac5e;
+    }
+    &:focus{
+      color: $s2;
+      outline: none;
+    }
+}
+.dibs-stamp{
+  height: 120px;
+  transform: rotate(-15deg)
+}
+
+.img-details-container{
+  width: 100%;
+  min-height: 300px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media(max-width:400px){
+  
+.img-details-container{
+  min-height: 300px;
+  background-color: white;
+  background-size: contain;
+}
+}
+
+@media(max-width:600px){
+  .img-details-container{
+  width: 100%;
+  margin-bottom: 10px;
+  background-size: contain;
+
+}
+}
+
+@media(min-width:600px){
+  .item-content{
+    flex-direction: row;
+    .details-container{
+      margin-left: 10px;
+      width: 60%;
+
+    }
+
+}
+}
+
+@media(min-width:950px){
+  margin: 0 auto;
+  max-width: 900px;
+}
